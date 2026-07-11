@@ -3,6 +3,7 @@ import torch
 import torch.nn as nn
 import time
 import base64
+import os
 
 # --- Page Config ---
 st.set_page_config(
@@ -47,7 +48,8 @@ st.markdown("""
 # ----------------------------
 # Config & Setup
 # ----------------------------
-FILE_PATH   = "data/text.txt"
+BASE_DIR    = os.path.dirname(os.path.abspath(__file__))
+FILE_PATH   = os.path.join(BASE_DIR, "data", "text.txt")
 SEQ_LEN     = 100
 BATCH_SIZE  = 64
 HIDDEN_SIZE = 256
