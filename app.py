@@ -49,7 +49,7 @@ st.markdown("""
 # Config & Setup
 # ----------------------------
 BASE_DIR    = os.path.dirname(os.path.abspath(__file__))
-FILE_PATH   = os.path.join(BASE_DIR, "data", "text.txt")
+FILE_PATH   = os.path.join(BASE_DIR, "data.txt")
 SEQ_LEN     = 100
 BATCH_SIZE  = 64
 HIDDEN_SIZE = 256
